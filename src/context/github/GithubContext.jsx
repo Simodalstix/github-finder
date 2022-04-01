@@ -22,13 +22,13 @@ export const GithubProvider = ({ children }) => {
     setLoading(false)
   }
 
-  return <GithubContext.Provider value={{
+  return (<GithubContext.Provider value={{
       users,
       loading,
       fetchUsers,
   }}>
       {children}
-  </GithubContext.Provider>
+  </GithubContext.Provider>)
 }
 
 export default GithubContext
